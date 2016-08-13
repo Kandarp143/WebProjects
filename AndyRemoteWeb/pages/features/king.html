@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0026)http://android-remote.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Remote Control Apps</title><link rel="stylesheet" type="text/css" href="./pages/features/index_style.css">
+<script src="./pages/features/index_script.js" type="text/javascript"></script>
+<script src="./pages/features/jquery.min.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+			
+			var controls = new Array("ctrl_mouse", "ctrl_keyboard", "ctrl_speech", "ctrl_media", "ctrl_slideshow", "ctrl_scroll", "ctrl_motion", "ctrl_shortcuts");
+			
+			var controls_title = new Array("Keyboard Remote", "Mouse Remote", "Windows media player Remote", "VLC Player Remote", "Power Control", "Power Point Remote", "File Trnasfer ", "Explore PC directory");
+			
+			var controls_description = new Array("Type on your Android&#8482; keyboard and the words will magically appear on your PC. That's a free Wi-Fi keyboard!", "Control your PCs mouse cursor like you would do on a laptop touchpad. Multitouch for scrolling and zooming is supported.", "Use the common controls for your media player directly on your Android&#8482 device. Works for Windows Media&#8482 palyer", "Use the common controls for your media player directly on your Android&#8482 device. Works for Vlc media player", "Shurt down Ur pc By just one click or use any other Power Options", "Control your Powerpoint&#8482; presentations files without buying an expensive presenter!", "Transfer files through Phone to Pc , Easy and fast Transfer.Block the use of Usb or Data cable to transfer files", "Don't know where is your Presentation or Other rquire files! let browse your Pc's whole Directory in Phone and just click which you want to start  ");
+			
+			function navItem(position) {
+				lastIndex = position;
+				// Highlight current item
+				var background = document.getElementById("content_navigation_back");
+				var x = (position * 50) + (position * 22) - 10;
+				background.style.left = x + "px";
+
+				// Update title & description
+				var title = document.getElementById("content_description_header");
+				var description = document.getElementById("content_description_value");
+				title.innerHTML = controls_title[position];
+				description.innerHTML = controls_description[position];
+				fadeInDiv("content_description_header");
+				hideDiv("content_description_value");
+				window.setTimeout("fadeInDiv('content_description_value')", 100);
+
+				// Load screenshot
+				window.setTimeout("loadScreen(" + position + ")", 200);
+			}
+
+			function showScreen(position) {
+				document.getElementById("screen_" + position).style.zIndex = "10";
+				fadeInScreen("screen_" + position);
+				lastScreen = position;
+			}
+
+			function hideScreens() {
+				if (lastScreen != -1) {
+					hideDiv("screen_start");
+				}
+				for (var i = 0; i < 8; i++) {
+					if (i != lastScreen) {
+						hideDiv("screen_" + i);
+					}
+					document.getElementById("screen_" + i).style.zIndex = "1";
+				}
+			}
+		</script>
+
+</head>
+
+<body onload="load();" screen_capture_injected="true">
+<div id="content" class="preload" style="display: block; top: 5px;"> 
+<img id="screen_0" class="smartphone preload" src="./pages/features/1fkey.png" alt="Smartphone" style="z-index: 1; display: inline;"> 
+<img id="screen_1" class="smartphone preload" src="./pages/features/1fkey.png" alt="Smartphone" style="z-index: 1; display: inline;"> 
+<img id="screen_2" class="smartphone preload" src="./pages/features/3fwmp.png" alt="Smartphone" style="display: none; z-index: 1;"> 
+<img id="screen_3" class="smartphone preload" src="./pages/features/4fvlc.png" alt="Smartphone" style="display: none; z-index: 1;"> 
+<img id="screen_4" class="smartphone preload" src="./pages/features/5fpow.png" alt="Smartphone" style="display: none; z-index: 1;"> 
+<img id="screen_5" class="smartphone preload" src="./pages/features/6fppt.png" alt="Smartphone" style="display: none; z-index: 1;">
+ <img id="screen_6" class="smartphone preload" src="./pages/features/7fft.png" alt="Smartphone" style="display: none; z-index: 1;"> 
+ <img id="screen_7" class="smartphone preload" src="./pages/features/7fft.png" alt="Smartphone" style="display: none; z-index: 1;">
+  
+  
+  <div id="content_header">
+    <div id="content_mainheader" class="blue">Fully Featured Remote App !! </div>
+    <div id="content_subheader" class="grey">Smartness utilze in Facilities !!</div>
+  </div>
+  
+  
+  
+  <div id="content_navigation"> 
+  <img id="content_navigation_back" src="./pages/features/navigation_icon_back copy.png" onmouseover="navActive()" onmouseout="navOut()" style="left: 62px;"> 
+  <img id="ctrl_mouse" onmouseover="navOver(&#39;ctrl_mouse&#39;)" class="content_navigation_img" src="./pages/features/1key.png" alt="Mouse"> 
+  <img id="ctrl_keyboard" onmouseover="navOver(&#39;ctrl_keyboard&#39;)" class="content_navigation_img" src="./pages/features/2mo.png" alt="Keyboard"> 
+  <img id="ctrl_speech" onmouseover="navOver(&#39;ctrl_speech&#39;)" class="content_navigation_img" src="./pages/features/3wmp.png" alt="Speech"> 
+  <img id="ctrl_media" onmouseover="navOver(&#39;ctrl_media&#39;)" class="content_navigation_img" src="./pages/features/4vlc.png" alt="Media"> 
+  <img id="ctrl_slideshow" onmouseover="navOver(&#39;ctrl_slideshow&#39;)" class="content_navigation_img" src="./pages/features/5pow.png" alt="Slideshow"> 
+  <img id="ctrl_scroll" onmouseover="navOver(&#39;ctrl_scroll&#39;)" class="content_navigation_img" src="./pages/features/6ppt.png" alt="Scroll"> 
+  <img id="ctrl_motion" onmouseover="navOver(&#39;ctrl_motion&#39;)" class="content_navigation_img" src="./pages/features/7ft.png" alt="Motion"> 
+  <img id="ctrl_shortcuts" onmouseover="navOver(&#39;ctrl_shortcuts&#39;)" class="content_navigation_img" src="./pages/features/8fb.png" alt="Shortcuts"> </div>
+  <div id="content_description">
+    <div id="content_description_header" class="blue" style="display: block;">Mouse Remote</div>
+    <div id="content_description_value" class="grey" style="display: block;">Control your PCs mouse cursor like you would do on a laptop touchpad. Multitouch for scrolling and zooming is supported.</div>
+  </div>
+
+</body>
+</html>

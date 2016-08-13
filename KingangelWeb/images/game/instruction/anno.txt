@@ -1,0 +1,11 @@
+"Burn or mount the image. 
+
+Install the game. 
+
+Copy over the cracked content from the /Crack dir on the disc to your 
+dir. Then either run install.bat or copy the "Profile" dir to "%USERPROFILE%Application DataUbisoftANNO 2070" yourself. 
+
+Block the game exes in your system firewall. 
+
+Play the game. When prompted, use "RELOADED" as login and "1" as password 
+to play the game offline."

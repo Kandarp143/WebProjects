@@ -1,0 +1,3 @@
+Mount/Burn iso 
+Install game 
+Copy full contents of the crack folder to your installed game folder (overwriting current files)

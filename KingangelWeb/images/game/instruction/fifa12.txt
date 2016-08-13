@@ -1,0 +1,6 @@
+Burn or mount the image 
+Install the game. Redistributables as needed in installInstaller 
+dir afterwards. 
+Copy over the cracked content from the Crack dir on the disc to your 
+installGame dir. 
+Play the game. Video config is in installGamefifasetupfifasetup.exe 

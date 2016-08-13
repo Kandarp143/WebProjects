@@ -1,0 +1,1 @@
+Copy all content from SKIDROW folder to Assassins Creed game directory. Shortcut the ACRSP.exe to your desktop. The online launcher will come up so have your internet locked or disconnected. Give it a second and the game will start. This copy works 100%.

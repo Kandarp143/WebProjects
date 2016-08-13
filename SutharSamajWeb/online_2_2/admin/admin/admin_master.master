@@ -1,0 +1,164 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin_master.master.cs" Inherits="admin_admin_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>::SAMAJ::</title>
+    
+    <style type="text/css">
+        
+        .style2
+        {
+            border-right: 2px solid #E9E9E9;
+            width: 249px;
+            padding-left: 0px;
+            padding-bottom: 3px;
+            background: #FFFFFF;
+            float: left;
+            text-align: left;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <form id="form1" runat="server">
+     <table class ="wraper">
+        <tr>
+            <td class="wraperi" colspan ="2"><center> <table id="toptable">
+               <tr>
+                    <td>
+                        <asp:LinkButton ID="home1" runat="server" 
+                            PostBackUrl="~/admin/admin/admin_home.aspx">Home </asp:LinkButton>
+                    </td>
+                    <td>|</td>
+                    <td>
+                        <asp:LinkButton ID="member1" runat="server" 
+                            PostBackUrl="~/admin/admin/memberlist.aspx">Member Detail</asp:LinkButton>
+                    </td>
+                    <td>|</td>
+                    <td>
+                        <asp:LinkButton ID="Committee1" runat="server" 
+                            PostBackUrl="~/admin/admin/committeelist.aspx">Committee Member List</asp:LinkButton>
+                    </td>
+                    <td>|</td>
+                    <td>
+                        <asp:LinkButton ID="email1" runat="server" 
+                            PostBackUrl="~/admin/admin/adminemail.aspx">Send Email</asp:LinkButton>
+                    </td>
+                     <td>|</td>
+                    <td>
+                        <asp:LinkButton ID="chat1" runat="server" 
+                            PostBackUrl="~/ChatRoom.aspx">Join Chat</asp:LinkButton>
+                    </td>
+                    <%--     <td><a href="admin_home.aspx" ID="home1" >&nbsp;Home</a></td>
+                    <td><a href="memberlist.aspx"ID="MEM1" >&nbsp;Members</a></td>
+                    <td><a href="committeelist.aspx" ID="COMM1" >Committee</a></td>--%>
+               </tr>
+               
+             </table></center></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="wraperj">
+             <table >
+          <tr><td><img src="../../images/main.png" style="border: 1px outset #c0c0c0; width: 152px; height: 119px;" /></td>
+              <td><img src="../../images/p.png" style="height: 119px; width: 951px" /></td></tr>
+         </table></td>
+        </tr>
+        <tr><td colspan ="2" id="wmargin">
+                    <marquee direction="center" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="1" scrolldelay="30">
+                
+                        Welcome to Shri Dhandhar Mevada Suthar Samaj
+                    </marquee></td></tr>
+        <tr class ="content"><td class="style2">
+
+        <table style="height: 112px; width: 291px;" align="center">
+                   
+                   <tr>
+                       <td style="width: 263px; height: 23px"><center>
+                           <asp:Label ID="user" runat="server" ></asp:Label>
+                           </center>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td style="width: 263px; height: 23px"><center>
+                           <asp:LinkButton ID="login" runat="server" Enabled="True" PostBackUrl="admin_login.aspx">Login</asp:LinkButton></center>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td style="width: 263px; height: 23px">
+                           <center>
+                               <asp:LinkButton ID="addcmember" runat="server" PostBackUrl="addcommiteemember.aspx" Enabled="False">Add Committee Member</asp:LinkButton>
+                           </center>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td style="width: 263px; height: 23px">
+                           <center>
+                               <asp:LinkButton ID="memberid" runat="server" PostBackUrl="addmember.aspx" Enabled="False">Add Member ID</asp:LinkButton>
+                           </center>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td style="width: 263px; height: 30px">
+                           <center>
+                               <asp:LinkButton ID="changepswd" runat="server" PostBackUrl="adminchangepaswrd.aspx" Enabled="False">Change Password</asp:LinkButton>
+                           </center>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td style="width: 263px; height: 30px">
+                           <center style="width: 263px">
+                               <asp:LinkButton ID="delmember" runat="server" 
+                                   PostBackUrl="deletecmember.aspx" Enabled="False">Delete Committee Member</asp:LinkButton>
+                           </center>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td style="width: 263px">
+                           <center style="width: 263px">
+                               <asp:LinkButton ID="logout" runat="server" onclick="logout_Click" Enabled="False">Log Out</asp:LinkButton>
+                           </center>
+                       </td>
+                   </tr>
+               </table>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>  
+        
+               
+        
+        
+                 
+            </td>
+            <td class="rightcolumn">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer" align="center"><b>
+                        <asp:LinkButton ID="home2" runat="server" 
+                            PostBackUrl="~/admin/admin/admin_home.aspx">Home  | </asp:LinkButton>
+                        <asp:LinkButton ID="member2" runat="server" 
+                            PostBackUrl="~/admin/admin/memberlist.aspx">Member Detail  | </asp:LinkButton>
+                        <asp:LinkButton ID="committee2" runat="server" 
+                            PostBackUrl="~/admin/admin/committeelist.aspx">Committee Member List  | </asp:LinkButton>
+                        <asp:LinkButton ID="email2" runat="server" 
+                            PostBackUrl="~/admin/admin/adminemail.aspx">Send Email  |</asp:LinkButton>
+                        <asp:LinkButton ID="chat2" runat="server" 
+                            PostBackUrl="~/ChatRoom.aspx">Join Chat</asp:LinkButton>    </b>   
+                </td>
+                </tr> 
+                <tr><td colspan ="2" class="footername" >
+                    <marquee direction="center" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="1" scrolldelay="30">
+                
+                        ::Shri Dhandhar Mevada Suthar Samaj Seva Sangh::
+                    </marquee></td></tr>
+        <tr><td colspan="2" class="footerend">
+                    &amp;
+                    Thank&nbsp; You &amp;</td></tr>
+        </table>
+    </form>
+</body>
+</html>

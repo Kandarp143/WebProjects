@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~\Images\MP900444039.JPG</ImageUrl>
+    
+    <AlternateText></AlternateText>
+    <Impressions>1</Impressions>
+    <Keyword>s</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~\Images\MP900444270.JPG</ImageUrl>
+    
+    <AlternateText></AlternateText>
+    <Impressions>1</Impressions>
+    <Keyword>s</Keyword>
+  </Ad>
+  <Ad>
+    <ImageUrl>~\Images\MR900438813.JPG</ImageUrl>
+   
+    <AlternateText></AlternateText>
+    <Impressions>1</Impressions>
+    <Keyword>s</Keyword>
+  </Ad>
+</Advertisements>

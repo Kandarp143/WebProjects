@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/user/user/mainMasterPage.master.cs" Inherits="user_mainMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>::SAMAJ::</title>
+    
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+      
+   
+      
+    <style type="text/css">
+        .style2
+        {
+           
+            width: 282px;
+            padding-left: 0px;
+            padding-bottom:0px;
+            
+            float: left;
+            text-align: left;
+        }
+        .style3
+        {
+            width: 206px;
+        }
+        .style4
+        {
+            width: 62px;
+        }
+    </style>
+      
+   
+      
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class ="wraper">
+        <tr>
+            <td class="wraperi" colspan ="2"><center> <table id="toptable">
+               <tr><td><a href="home1.aspx">Home</a></td>
+               <td ><a href="mmember.aspx">Members</a></td>
+               <td><a href="mcommitteemember.aspx">Committee</a></td>
+               <td><a href="mcontactus.aspx">Contact Us</a></td>
+               <td><a href="maboutus.aspx">About Us</a></td>
+               <td><a href="../../ChatRoom.aspx"> Join Chat</a></td>
+               </tr>
+             </table></center></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="wraperj">
+             <table >
+          <tr><td><img src="../../images/main.png" 
+                  style="border: 1px outset #c0c0c0; height: 119px;" /></td>
+              <td><img src="../../images/p.png" style="height: 123px; width: 951px" /></td></tr>
+         </table></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="wmargin">
+                    <marquee direction="center" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="1" scrolldelay="30">
+                
+                        Welcome to Shri Dhandhar Mevada Suthar Samaj
+                    </marquee></td>
+        </tr>
+        <tr class ="content">
+            <td class="style2">
+            <div class ="searchcolumn "> <asp:TextBox ID="txtsearch" runat="server" Width="164" BorderColor="Black" BorderStyle="Outset" BorderWidth="2"></asp:TextBox>&nbsp;&nbsp;
+                <asp:Button ID="search" runat="server" Text="Search" height="23px" 
+                    BackColor="#999999" BorderColor="#666666" BorderStyle="Outset" BorderWidth="1" 
+                    onclick="search_Click" />
+                        
+</div>
+<table><tr><td>
+<div style="background-image: url('../../Images/login_bg1.jpg'); height: 263px; width: 275px; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #FFCC99;">
+<table style="margin-top: 0px; margin-left: 34px;padding-top:54px">
+<tr><td class="style4"  
+        style="font-family: 'Bodoni MT'; color: #CC3300; font-size: 14px; font-weight: bold; padding-bottom: 3px;">UserName:
+    </td><td><asp:TextBox ID="txtuname" 
+        runat="server" Width="132px" BackColor="White" BorderColor="#B32D00" 
+            BorderStyle="Inset" ></asp:TextBox></td></tr>
+                      
+                   <tr><td class="style4"  style="font-family: 'Bodoni MT'; color: #CC3300; font-size: 14px; font-weight: bold; padding-bottom: 3px;"> Password :</td><td>
+                                <asp:TextBox ID="txtpswrd" runat="server" 
+                           Width="132px"  TextMode="Password" BorderColor="#C43100" BorderStyle="Inset"></asp:TextBox></td></tr>
+                   <tr><td class="style3" colspan="2" style="padding-top: 4px">
+                       <center style="height: 25px" >
+                       <asp:ImageButton ID="btnlogin" runat="server" Height="25px" 
+                           ImageUrl="../../Images/btnlogin.jpg" onclick="btnlogin_Click" Width="78px" />
+                       <br />
+                       </center></td></tr>
+                   <tr><td class="style3" colspan="2"><center>
+                       <asp:LinkButton ID="newmember" runat="server" 
+                           Font-Bold="True" Font-Names="Arial Narrow" Font-Underline="True" ForeColor="#6666FF" 
+                           PostBackUrl="~/user/user/Newmember.aspx" >New Member</asp:LinkButton></center></td></tr>
+                   <tr><td class="style3" colspan="2"><center>
+                       <asp:Label ID="Label1" runat="server" ForeColor="#CC3300" 
+                           Font-Names="Bodoni MT" Font-Size="11pt"></asp:Label></center>
+                       </td></tr>
+</table></div>
+</td></tr>
+<tr><td>
+    <img src="../../images/a.gif" style="width: 275px" /></td></tr></table>
+                      </td>
+            <td class="rightcolumn">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                   
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="2" class="footer" align="center" >
+                   <a href="Home.aspx">Home</a>|<a href="mmember.aspx">Members</a>|<a href="mcommitteemember.aspx">Committee</a>|<a href="mcontactus.aspx">ContactUs</a>|<a href="maboutus.aspx">AboutUs</a>|</td>
+            
+        </tr>
+        <tr><td colspan ="2" class="footername">
+                    <marquee direction="center" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="1" scrolldelay="30">
+                
+                        ::Shri Dhandhar Mevada Suthar Samaj Seva Sangh::
+                    </marquee></td></tr>
+        <tr>
+        <td colspan="2" class="footerend">
+                    &amp;
+                    Thank&nbsp; You &amp;</td></tr>
+   </table>
+    </form>
+</body>
+</html>

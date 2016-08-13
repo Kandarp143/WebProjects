@@ -1,0 +1,17 @@
+Page:
+In user folder:
+	uploadphoto.aspx.cs
+	sub_uploadphoto.aspx.cs
+In admin Folder 
+	cmember_upload.aspx.cs
+Change following
+	File1.PostedFile.SaveAs("E:\\TY\\dotnet\\mainsamaj\\Images\\image\\" + s); /*change path*/
+
+	in above line change the following
+
+	File1.PostedFile.SaveAs("[add the folder path and use \\]\\mainsamaj\\Images\\image\\" + s); 
+		only change square bracket
+
+
+
+

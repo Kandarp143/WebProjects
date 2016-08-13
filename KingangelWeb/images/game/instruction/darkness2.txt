@@ -1,0 +1,14 @@
+NSTALL NOTES
+
+2. Mount or burn image
+3. Install
+4. Copy everything from the SKIDROW folder into the game installation
+5. Play the game
+6. Support the companies, which software you actually enjoy!
+
+Minimum System Requirements:
+OS: Windows XP/Vista/7
+Processor: Intel Core 2 @ 2GHz / AMD Athlon 64 X2 4200+
+Memory: 1.5GB RAM
+Hard Disk Space: 10GB
+Video Card: 256MB NVIDIA GeForce 8600 / ATI Radeon HD 2600

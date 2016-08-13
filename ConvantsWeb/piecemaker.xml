@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Piecemaker>
+  <Contents>
+    <Image Source="contents/1.png" Title="CCSA">
+		<Text>&lt;h1&gt;Convants Certified Security Analyst&lt;/h1&gt;&lt;p&gt;Convants Certified Security Analyst, CCSA an advanced ethical hacking training certification that complements the Certified Ethical Hacker, CEH certification by exploring the analytical phase ofethical hacking. While the Certified Ethical Hacker  certification exposes the learner to hacking tools and technologies, the Certified Security Analyst course takes it a step further by exploring how to analyze the outcome from these  tools  and  technologies. Through groundbreaking network penetration testing training methods and techniques, this pen testing computer security  certification helps students perform the intensive assessments required to effectively identify and mitigate risks to the information security of the infrastructure.&lt;/p&gt;</Text>
+		<Hyperlink URL="course.html" Target="_blank" />
+	</Image>		
+    <Image Source="contents/8.png" Title="CEH">
+		<Text>&lt;h1&gt;Certified Ethical Hacker&lt;/h1&gt;&lt;p&gt;This class will immerse the students into an interactive environment where they will be shown how to scan, test, hack and secure their own systems. The lab intensive environment gives each student in-depth knowledge and practical experience with the current essential security systems. Students will begin by understanding how perimeter defenses work and then be lead into scanning and attacking their own networks, no real network is harmed. Students then learn how intruders escalate privileges and what steps can be taken to secure a system. Students will also learn about Intrusion Detection, Policy Creation, Social Engineering, DDoS Attacks, Buffer Overflows and Virus Creation. This course prepares you for Convants Certified Ethical Hacker exam 312-50.&lt;/p&gt;</Text>
+		<Hyperlink URL="course.html" Target="_blank" />
+	</Image>		
+    <Image Source="contents/7.png" Title="CHFI">
+		<Text>&lt;h1&gt;Computer Hacking Forensic Investigator&lt;/h1&gt;&lt;p&gt;The CHFI course will give participants the necessary skills to identify an intruder’s footprints and to properly gather the necessary evidence to prosecute. Many of today’s top tools of the forensic trade will be taught during this course, including software, hardware and specialized techniques. The need for businesses to become more efficient and integrated with one another, as well as the home user, has given way to a new type of criminal, the “cyber-criminal.” It is no longer a matter of “will your or-ganization be comprised (hacked)?” but, rather, “when?” Today’s battles between corporations, gov-ernments, and countries are no longer fought only in the typical arenas of boardrooms or battlefields using physical force.&lt;/p&gt;</Text>
+		<Hyperlink URL="course.html" Target="_blank" />
+	</Image>		
+      </Contents>
+  <Settings ImageWidth="960" ImageHeight="360" LoaderColor="0x333333" InnerSideColor="0x222222" SideShadowAlpha="0.8" DropShadowAlpha="0.7" DropShadowDistance="25" DropShadowScale="0.95" DropShadowBlurX="40" DropShadowBlurY="4" MenuDistanceX="20" MenuDistanceY="50" MenuColor1="0x999999" MenuColor2="0x333333" MenuColor3="0xFFFFFF" ControlSize="100" ControlDistance="20" ControlColor1="0x222222" ControlColor2="0xFFFFFF" ControlAlpha="0.8" ControlAlphaOver="0.95" ControlsX="450" ControlsY="280&#xD;&#xA;" ControlsAlign="center" TooltipHeight="30" TooltipColor="0x222222" TooltipTextY="5" TooltipTextStyle="P-Italic" TooltipTextColor="0xFFFFFF" TooltipMarginLeft="5" TooltipMarginRight="7" TooltipTextSharpness="50" TooltipTextThickness="-100" InfoWidth="400" InfoBackground="0xFFFFFF" InfoBackgroundAlpha="0.95" InfoMargin="15" InfoSharpness="0" InfoThickness="0" Autoplay="4" FieldOfView="45"></Settings>
+  <Transitions>
+    <Transition Pieces="7" Time="1.4" Transition="easeInOutBack" Delay="0.12" DepthOffset="250" CubeDistance="30"></Transition>
+    <Transition Pieces="11" Time="1.2" Transition="easeInOutSine" Delay="0.08" DepthOffset="500" CubeDistance="15"></Transition>
+    <Transition Pieces="5" Time="1.5" Transition="easeInOutElastic" Delay="0.15" DepthOffset="350" CubeDistance="40"></Transition>
+  </Transitions>
+</Piecemaker>

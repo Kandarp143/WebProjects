@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMasterPage.master.cs" Inherits="UserMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>::SAMAJ::</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+      
+   
+      
+    <style type="text/css">
+       .style2
+        {
+           
+            width: 282px;
+            padding-left: 0px;
+            padding-bottom:0px;
+            
+            float: left;
+            text-align: left;
+        }
+        .style4
+        {
+            width: 275px;
+        }
+        .style5
+        {
+            width: 268px;
+        }
+    </style>
+      
+   
+      
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class ="wraper">
+        <tr>
+            <td class="wraperi" colspan ="2"><center> <table id="toptable">
+               <tr><td><a href="home.aspx">Home</a></td>
+               <td ><a href="umember.aspx">Members</a></td>
+               <td><a href="ucommitteemember.aspx">Committee</a></td>
+               <td><a href="contactus.aspx">Contact Us</a></td>
+               <td><a href="uaboutus.aspx">About Us</a></td>
+               <td><a href="../../ChatRoom.aspx"> Join Chat</a></td>
+               </tr>
+             </table></center>
+
+</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="wraperj">
+             <table >
+          <tr><td><img src="../../Images/main.png" style="border: 1px outset #c0c0c0; width: 152px; height: 119px;" /></td>
+              <td><img src="../../Images/p.png" style="height: 123px; width: 951px" /></td></tr>
+         </table></td>
+        </tr>
+        <tr>
+           <td colspan ="2" id="wmargin">
+                    <marquee direction="center" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="1" scrolldelay="30">
+                
+                        Welcome to Shri Dhandhar Mevada Suthar Samaj
+                    </marquee></td>
+        </tr>
+        <tr class ="content">
+            <td class="style2"  >
+            
+            <div class ="searchcolumn ">
+                <asp:TextBox ID="txtsearch" runat="server" Width="164" BorderColor="Black" BorderStyle="Outset" BorderWidth="2"></asp:TextBox>&nbsp;&nbsp;
+                <asp:Button ID="search" runat="server" Text="Search" height="23px" 
+                    BackColor="#999999" BorderColor="#666666" BorderStyle="Outset" BorderWidth="1" 
+                    onclick="search_Click" />
+</div>
+ <table>
+ <tr>
+ <td>  
+ <img src="../../Images/memberlogin.gif" style="height: 59px" /> </td></tr>
+ <tr><td>
+      <center>
+<div class="menu bubplastic vertical blue">
+	<ul>
+		<li><span class="menu_r"><a href="profile.aspx"><span class="menu_ar"><b>My Family</b></span></a></span></li>
+		<li><span class="menu_r"><a href="addsubmember.aspx"><span class="menu_ar"><b>Add Family Member</b></span></a></span></li>
+		<li><span class="menu_r"><a href="deletemember.aspx"><span class="menu_ar"><b>Delete Member</b></span></a></span></li>
+		<li><span class="menu_r"><a href="changepassword.aspx"><span class="menu_ar"><b>Change Password</b></span></a></span></li>
+		<li><span class="menu_r"><a href="home1.aspx"><span class="menu_ar"><b>Log Out</b></span></a></span></li>
+       
+	</ul>
+	<br class="clearit" />
+</div>
+</center></td></tr>
+<tr><td><img src="../../Images/a.gif" style="width: 275px" /></td></tr></table>
+</td>
+<td class="rightcolumn">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">
+                   <a href="home.aspx">Home</a>|<a href="umember.aspx">Members</a>|<a href="ucommitteemember.aspx">Committee</a>|<a href="contactus.aspx">ContactUs</a>|<a href="uaboutus.aspx">AboutUs</a>|</td>
+            
+        </tr>
+        <tr><td colspan ="2" class="footername">
+                    <marquee direction="center" onmouseout="this.start()" onmouseover="this.stop()" scrollamount="1" scrolldelay="30">
+                
+                        ::Shri Dhandhar Mevada Suthar Samaj Seva Sangh::
+                    </marquee></td></tr>
+        <tr>
+        <td colspan="2" class="footerend">
+                    &amp;
+                    Thank&nbsp; You &amp;</td></tr>
+   </table>
+   <p></p>
+    </form>
+</body>
+</html>

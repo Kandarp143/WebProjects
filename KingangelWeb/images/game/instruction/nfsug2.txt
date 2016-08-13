@@ -1,0 +1,5 @@
+1.	Download any Virtual Drive software, install it, make at least one virtual drive.
+2. Mount CD 1 named rld-nu2a.bin to the virtual drive, before running the setup, open the virtual drive copy and paste in your hard drive the folder or contents of folder named crack, now run the game.
+3. When the game setup will ask for the CD 2, Unmount the CD 1 and mount the CD 2 named rld-nu2b.bin, and press ok in the game installer.
+4. There is file named Need for Speed Undergroud 2.nfo, open it with notepad and there are your CD keys.
+5. Before launching the game, copy paste the CONTENTS of the folder crack you previously copied in your hard drive, to the installation directory of the game
